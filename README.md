@@ -325,7 +325,9 @@ WARN [Hook] process enumeration timed out after 4000ms (worker abandoned)
 | `fetch_custom_face_detail` | QQ 收藏表情同步 | 表情库不更新，不阻塞收发 |
 | `get_status` | 在线/健康信号 | 只影响上游健康告警 |
 
-已知现状（2026-11）：SnowLuma 已私有化；NapCat 仓库 README 只剩「Ending」且 Releases/tags 已清空；LLOneBot 仓库 404；Lagrange.Core 仍在维护但只是**协议库**，不是开箱即用的 OneBot 服务端。因此除自备的 SnowLuma 副本外，目前没有可直接下载、仍在分发的 OneBot v11 端。换实现后把 `config.json` 的 `snowluma.wsUrl` / `httpUrl` 指过去，先测「私聊发一句话能收到回复」，再逐项确认上面三个扩展是否降级。
+已知现状（2026-11）：SnowLuma 已私有化；NapCat 官方仓库 README 只剩「Ending」且 Releases/tags 已清空；LLOneBot 仓库 404；Lagrange.Core 仍在维护但只是**协议库**，不是开箱即用的 OneBot 服务端。因此除自备的 SnowLuma 副本外，没有官方仍在分发的 OneBot v11 端；社区归档里有 NapCat 的构建产物（第三方，未实测）。换实现后把 `config.json` 的 `snowluma.wsUrl` / `httpUrl` 指过去，先测「私聊发一句话能收到回复」，再逐项确认上面三个扩展是否降级。
+
+具体可用的社区归档、下载路径与接入步骤见 **[PROTOCOL_ENDPOINT.md](PROTOCOL_ENDPOINT.md)**（均标注「未实测」，不要当成已支持的配置）。
 
 ### 已知行为：HTTP token 与 WS token 是**两个不同的值**
 
